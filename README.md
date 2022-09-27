@@ -54,6 +54,7 @@ ruby main.rb in the terminal.
 
 ## Built With:
 Major languages: HTML, CSS, JavaScript, Ruby, Postgresql, Ruby on Rails
+
 Technologies used: VSC, Github, Gitflow, RSpec
 
 ## Video presentation:
