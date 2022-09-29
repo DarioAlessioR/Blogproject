@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   user = User.new(name: 'Dario')
-  user2 = User.new(name:'')
+  user2 = User.new(name: '')
 
   it 'Tests to prove user is valid' do
-  expect(user).to be_valid
+    expect(user).to be_valid
   end
 
   it 'Tests if name = user name' do
@@ -28,7 +28,7 @@ RSpec.describe User, type: :model do
   it 'Tests method last_three_posts return a maximun of 3 posts' do
     user3 = User.new(name: 'Pepe')
     user3.save
-    
+
     5.times do
       Post.new(title: 'AAA', text: 'Testing', author: user3).save
     end

@@ -49,7 +49,7 @@ RSpec.describe Post, type: :model do
     user3 = User.new(name: 'Pepeillo', post_counter: 0)
     user3.save
     post9 = Post.new(title: 'Abcdefg', text: 'Testing', author: user3, comments_counter: 0,
-    likes_counter: 0)
+                     likes_counter: 0)
     post9.save
 
     6.times do
@@ -58,8 +58,4 @@ RSpec.describe Post, type: :model do
 
     expect(post9.recent_five_comments.length).to be <= 5
   end
-
-
-
-
 end
