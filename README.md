@@ -47,10 +47,15 @@ Exercise: API documentation.
 
 ## Getting Started
 
-Get a local copy by clonning this repo.
+To get a local copy of this project clone this repository or download the Zip folder: git clone https://github.com/DarioAlessioR/Blogproject.git
 
-To run the code please use the "Code Runner" VSCode extension or
-ruby main.rb in the terminal.
+In the root directory run: gem install bundler
+
+Then run: bundle install
+
+Run ruby app in the Command Line: rails s
+
+To run test cases in the command line type: rspec spec
 
 ## Built With:
 Major languages: HTML, CSS, JavaScript, Ruby, Postgresql, Ruby on Rails
@@ -63,10 +68,8 @@ Please click the following link to watch the video presentation
 
 
 
-##  Authors
-👤 Author1
-
-Dario Alessio
+##  Author
+👤 Dario Alessio
 
 GitHub: https://github.com/DarioAlessioR
 
