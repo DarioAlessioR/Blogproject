@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
     it 'Response status is 200' do
-    get users_path
-    expect(response).to have_http_status(200)
+      get users_path
+      expect(response).to have_http_status(200)
     end
 
     it 'Renders the index view template' do
@@ -34,10 +34,9 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /show' do
-
     it 'Response status is ok' do
       get users_path(1)
-      expect(response).to have_http_status(:ok)    
+      expect(response).to have_http_status(:ok)
     end
 
     it 'Renders the show view' do

@@ -6,7 +6,7 @@ RSpec.describe 'Posts', type: :request do
       get '/users/:user_id/posts'
       expect(response).to have_http_status(:ok)
     end
-    
+
     it 'Renders the index view' do
       get '/users/:user_id/posts'
       expect(response).to render_template(:index)
@@ -28,11 +28,10 @@ RSpec.describe 'Posts', type: :request do
       get '/users/:user_id/posts/1'
       expect(response).to render_template(:show)
     end
-  
+
     it 'Response to render show view template' do
       get '/users/:user_id/posts/1'
       expect(response.body).to include('Posts show view')
     end
-  
   end
 end
