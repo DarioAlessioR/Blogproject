@@ -10,7 +10,7 @@
     </article>
 
     <article class="comments">
- 
+
         <ul class="total-comments">
           <% @post.comments.each do |comment| %>
             <li class="comment"><%= comment.author.name %>: <%= comment.text %></li>
@@ -19,5 +19,9 @@
       
     </article>
     
+    <%= link_to user_posts_path(@user) do %>
+      <button class="see-all-button">Back to list of posts</button>
+    <% end %>
+
   </section>
 </main>
