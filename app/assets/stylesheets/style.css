@@ -104,3 +104,22 @@ body {
 .like-form {
   margin-bottom: 20px;
 }
+
+.newpost-text {
+  width: 390px;
+  height: 150px;
+}
+
+.new-text {
+  width: 100%;
+  height: 100%;
+}
+
+.new-title {
+  width: 325px;
+  margin-bottom: 30px;
+}
+
+.submit-post {
+  margin-top: 50px;
+}

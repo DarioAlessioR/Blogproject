@@ -8,18 +8,18 @@
 
   <div class="newpost-title">
 
-    <%= f.label :title %>
+    <%= f.label :title, 'Post title: ' %>
     <%= f.text_field :title, placeholder: 'Write the title of your post here', :required => true, class: 'new-title' %>
 
   </div>
 
   <div class="newpost-text">
 
-    <%= f.label :text %>
+    <%= f.label :text, 'Post content:' %>
     <%= f.text_area :text, placeholder: 'Write your post here', :required => true, class: 'new-text' %>
 
   </div>
 
-  <%= f.submit "Submit" %>
+  <%= f.submit "Submit", class: 'submit-post' %>
 
 <% end %>
