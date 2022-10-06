@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(151, 157, 158);
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
+}
+
+.users-list {
+  width: 100%;
+  
+  border: 2px solid green;
+}
+
+.user-card {
+
+  display: flex;
+  flex-direction: row;
+  
+  border: 2px solid rgb(161, 12, 12);
+
+}
+
+.user-image {
+  width: 15%;  
+  border: 2px solid rgb(243, 243, 237);
+
+}
+
+
+
+
+

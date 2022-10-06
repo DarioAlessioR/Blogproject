@@ -1,8 +1,8 @@
 <main>
-  <section>
+  <section class="welcome">
     <h1>Welcome to Dario s Blog App</h1>
   </section>
-  <section>
+  <section class="users-list">
     <h2>List of users</h2>
     <% if @users.empty? %>
       <h3>Currently there are not users in the database</h3>
@@ -11,7 +11,7 @@
         <div class="users-section">
           <div class="user-card">
             <%= link_to user_path(user.id) do %>
-              <img scr="<%= user.photo %>" alt="Image of user">
+              <img src="<%=user.photo || image_url('user_icon.png') %>" alt="Image of user <%=user.name %>" title="<%=user.name %>" class="user-image">
               <h4><%= user.name %></h4>
               <p>Number of posts: <%= user.post_counter %></p>
             <% end %>
@@ -21,54 +21,4 @@
     <% end %>
   </section>
 </main>
-
-<% 3.times do %>
-  <h1>Users index view<h1>
-<% end %>
-
---
-first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-first_user.save
-first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
-first_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my first post')
-third_c = Comment.create(post: first_post, author: second_user, text: 'Hi Tom  3!')
-User.find_by(first_name: 'Tom').delete # Delete
-User.find_by(id: 1).delete
-User.first
-User.last
-Post.where(author_id: 7).order('created_at DESC').limit(3)
-Comment.last(5)
-User.where("name = ?", params[:name])
-User.where("name = ?")
-User.limit(7).order(created_at: :asc)
-Post.where('title': 'Hello panas')
-User.where(name: 'Tom')
-User.exists?(id: 7)
-User.exists?(id: [1, 2, 3])
-User.count('id')
-User.count
-Post.where(author_id: 8)
-User.ids
-User.pluck(:id, :name)
-User.find_by(first_name: 'Tom').delete
-User.find_by(id: 1).delete
-User.find_by(id: 1..5).delete
-User.find_by(id: 3, 4, 5).delete
-
-https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png
-
-https://icons.iconarchive.com/icons/iconsmind/outline/512/Administrator-icon.png
-
-
-
-
-
-
-
-
-
-
-
-
-
 
