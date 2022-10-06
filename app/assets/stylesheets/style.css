@@ -25,9 +25,8 @@ body {
 }
 
 .user-image {
-  width: 100%;  
+  width: 100%;
   border: 1px solid rgb(243, 243, 237);
-
 }
 
 .image-container {
@@ -40,7 +39,7 @@ body {
   height: 70px;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   border: 1px solid white;
 }
@@ -82,3 +81,8 @@ body {
   list-style: none;
 }
 
+.five-comments {
+  width: 350px;
+  margin-top: 10px;
+  border: 1px solid rgb(253, 250, 250);
+}

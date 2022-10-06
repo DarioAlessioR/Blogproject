@@ -31,7 +31,7 @@
             </div>
             <ul class="five-comments">
               <% post.recent_five_comments.each do |comment| %>
-                <li><%= comment.author.name %>: <%= comment.text %></li>
+                <li class="comment"><%= comment.author.name %>: <%= comment.text %></li>
               <% end %>
             </ul>
           </div>
