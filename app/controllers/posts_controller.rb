@@ -26,8 +26,8 @@ class PostsController < ApplicationController
       flash.now[:error] = 'Please fill all fields'
       render :new, status: 422
     end
-  end 
- 
+  end
+
   private
 
   def strong_params
