@@ -1,13 +1,17 @@
 <% form_with model: Post , url: user_posts_path , class: 'post-form', method: :post do |f| %>
 
   <div class="newpost-title">
+
     <%= f.lable :title %>
     <%= f.text_field :title, :required => true, class: 'new-title' %>
+
   </div>
 
   <div class="newpost-text">
-  <%= f.lable :text %>
-  <%= f.text_field :text, :required => true, class: 'new-text' %>
+
+    <%= f.lable :text %>
+    <%= f.text_field :text, :required => true, class: 'new-text' %>
+
   </div>
 
   <%= f.submit "Submit post" class: 'submit' %>
