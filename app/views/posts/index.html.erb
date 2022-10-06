@@ -2,10 +2,14 @@
   <section class="posts-section">
     <h2>Posts information for user</h2>
     <article class="users-info">
-      <div class="users-card">
-        <img src="<%=@user.photo || image_url('user_icon.png') %>" alt="Image of user <%=@user.name %>" title="<%=@user.name %>" class="user-image">
-        <h3><%= @user.name %></h3>
-        <p>Number of posts: <%= @user.post_counter %></p>
+      <div class="user-card">
+        <div class="image-container">
+          <img src="<%=@user.photo || image_url('user_icon.png') %>" alt="Image of user <%=@user.name %>" title="<%=@user.name %>" class="user-image">
+        </div>
+        <div class="name-counter"
+          <h3><%= @user.name %></h3>
+          <p>Number of posts: <%= @user.post_counter %></p>
+        </div>
       </div>
     </article>
 

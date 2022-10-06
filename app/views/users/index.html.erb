@@ -9,13 +9,18 @@
     <% else %>
       <% @users.each do |user| %>
         <div class="users-section">
-          <div class="user-card">
-            <%= link_to user_path(user.id) do %>
-              <img src="<%=user.photo || image_url('user_icon.png') %>" alt="Image of user <%=user.name %>" title="<%=user.name %>" class="user-image">
-              <h4><%= user.name %></h4>
-              <p>Number of posts: <%= user.post_counter %></p>
-            <% end %>
-          </div>
+          <%= link_to user_path(user.id) do %>
+            <div class="user-card">
+              <div class="image-container">
+                <img src="<%=user.photo || image_url('user_icon.png') %>" alt="Image of user <%=user.name %>" title="<%=user.name %>" class="user-image">
+              </div>
+              <div class="name-counter"
+                <h4><%= user.name %></h4>
+                <p>Number of posts: <%= user.post_counter %></p>
+              </div>
+            </div>
+          <% end %>
+          
         </div>
       <% end %>
     <% end %>
