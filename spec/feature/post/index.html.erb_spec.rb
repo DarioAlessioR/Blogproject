@@ -22,7 +22,7 @@ RSpec.describe 'Post index page', type: :feature do
       expect(page).to have_content('Posts information for user')
     end
 
-    it 'shows the user photo' do
+    it 'shows the proper user photo' do
       expect(page.body).to include('https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
     end
 
