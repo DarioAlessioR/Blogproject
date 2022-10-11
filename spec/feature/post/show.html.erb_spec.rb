@@ -45,11 +45,11 @@ RSpec.describe 'Post show page', type: :feature do
       expect(page).to have_content('This is the 1st comment on the 4th post')
     end
 
-    it 'shows number of comments the post has' do
+    it 'shows the number of comments the post has' do
       expect(page.body).to include('Number of comments: 1')
     end
 
-    it 'shows number of likes a post has' do
+    it 'shows the number of likes a post has' do
       expect(page.body).to include('Number of likes: 0')
     end
 

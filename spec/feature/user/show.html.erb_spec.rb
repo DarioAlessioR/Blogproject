@@ -25,7 +25,7 @@ RSpec.describe 'User show page', type: :feature do
       expect(page.body).to include('https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
     end
 
-    it 'shows number of posts user has written' do
+    it 'shows the number of posts the user has written' do
       expect(page.body).to include('Number of posts: 4')
     end
 
