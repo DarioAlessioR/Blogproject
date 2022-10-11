@@ -7,8 +7,8 @@ RSpec.describe 'Post show page', type: :feature do
                           photo: 'https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
       @id = @user.id
       @user2 = User.create(name: 'Pepe', bio: 'This is the bio',
-                          photo: 'https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
-      @post4 = Post.create(author: @user, title: "Hello 4", text: 'This is my fourth post')
+                           photo: 'https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
+      @post4 = Post.create(author: @user, title: 'Hello 4', text: 'This is my fourth post')
       @comment1 = Comment.create(post: @post4, author: @user2, text: 'This is the 1st comment on the 4th post')
       visit user_post_path(@user, @post4)
     end
@@ -24,15 +24,15 @@ RSpec.describe 'Post show page', type: :feature do
     it 'shows the page title' do
       expect(page).to have_content('Information for post')
     end
-  
+
     it 'shows number of comments the post has' do
       expect(page.body).to include('Number of comments: 1')
     end
-  
+
     it 'shows number of likes the post has' do
       expect(page.body).to include('Number of likes: 0')
     end
-  
+
     it 'shows the whole post body (This is my fourth post)' do
       expect(page).to have_content('This is my fourth post')
     end
