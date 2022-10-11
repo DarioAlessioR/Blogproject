@@ -10,7 +10,7 @@ RSpec.describe 'User index page', type: :feature do
       visit users_path
     end
 
-    it 'shows user name' do
+    it 'shows  the proper user name' do
       expect(page).to have_content(@user.name)
     end
 
