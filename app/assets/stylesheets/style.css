@@ -123,3 +123,44 @@ body {
 .submit-post {
   margin-top: 50px;
 }
+
+.navbar {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.navbar-button-link {
+  background-color:rgb(151, 157, 158);
+  border: none;
+  list-style: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.page-title {
+  border-right: 1px solid white;
+  padding-right: 40px;
+}
+
+.field {
+  width: 390px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.input-data {
+  width: 390px;
+}
+
+.input-data-photo {
+  width: 390px;
+  height: 70px;
+}
+
+.actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
