@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
-  load_and_authorize_resource
+  # load_and_authorize_resource
 
   def index
     @user = User.includes(:posts).find(params[:user_id])
@@ -20,13 +20,11 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user = current_user
-    @post = Post.new(strong_params)
-    @post.author = @user
+    @post = current_user.posts.create(strong_params)
 
     if @post.save
       flash[:success] = 'Post saved!'
-      redirect_to user_path(@user.id)
+      redirect_to user_path(current_user.id)
     else
       flash.now[:error] = 'Please fill all fields'
       render :new, status: 422

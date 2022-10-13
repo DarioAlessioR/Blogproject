@@ -5,11 +5,11 @@ class Ability
     can :read, :all
     return unless user.present?
 
-    can :read, :all
-    can :create, Post, author: user
+ 
     can :manage, Post, author: user
     can :manage, Comment, author: user
-    return unless user.admin?
+   return unless user.admin?
+   #  return unless user.role == 'admin'
 
     can :manage, :all
 
