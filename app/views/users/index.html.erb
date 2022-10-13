@@ -2,7 +2,7 @@
   <section class="users-list">
     <h2>List of users</h2>
     <% if @users.empty? %>
-      <h3>Currently there are not users in the database</h3>
+      <h3>Currently there are not users in the database yet</h3>
     <% else %>
       <% @users.each do |user| %>
         <div class="users-section">
@@ -11,7 +11,7 @@
               <div class="image-container">
                 <img src="<%=user.photo || image_url('user_icon.png') %>" alt="Image of user <%=user.name %>" title="<%=user.name %>" class="user-image">
               </div>
-              <div class="name-counter"
+              <div class="name-counter">
                 <h4><%= user.name %></h4>
                 <p>Number of posts: <%= user.post_counter %></p>
               </div>
