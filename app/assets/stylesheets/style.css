@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid rgb(247, 250, 247); 
+  border-bottom: 2px solid rgb(247, 250, 247);
 }
 
 .users-list {
