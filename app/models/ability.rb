@@ -9,8 +9,6 @@ class Ability
     can :manage, Comment, author: user
     return unless user.admin?
 
-    # return unless user.role == 'admin'
-
     can :manage, :all
 
     # Define abilities for the user here. For example:
