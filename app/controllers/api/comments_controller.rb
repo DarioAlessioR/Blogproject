@@ -2,7 +2,7 @@ class Api::CommentsController < ApplicationController
   before_action :authenticate_user!
   skip_before_action :verify_authenticity_token
   respond_to :json
-  
+
   def index
     @post = Post.find(params[:post_id])
     @comments = @post.comments
