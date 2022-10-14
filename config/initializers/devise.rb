@@ -320,4 +320,3 @@ config.jwt do |jwt|
   jwt.expiration_time = 10.day.to_i
   end
 end
-
