@@ -71,11 +71,17 @@ Please click the following link to watch the video presentation
 ##  Author
 👤 Dario Alessio
 
-GitHub: https://github.com/DarioAlessioR
+- GitHub: https://github.com/DarioAlessioR
 
-Slack: https://microverse-students.slack.com/team/U039GCFRK9B
+- Slack: https://microverse-students.slack.com/team/U039GCFRK9B
 
-LinkedIn: https://www.linkedin.com/in/dario-alessio-3a3b7911b
+- LinkedIn: https://www.linkedin.com/in/dario-alessio-3a3b7911b
+
+👤 Brenda Wihogora
+
+- GitHub: [@Brenda309](https://github.com/Brenda309)
+- Twitter: [@BrendaWihogora](https://twitter.com/BrendaWihogora)
+- LinkedIn: [BrendaWihogora](https://linkedin.com/in/BrendaWihogora/)
 
 ## 🤝 Contributing:
 

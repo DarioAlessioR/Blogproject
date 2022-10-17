@@ -125,12 +125,11 @@ body {
 }
 
 .navbar {
-  width: 150%;
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: 15px;
-  align-items: center;
 }
 
 .navbar-button-link {
@@ -139,7 +138,6 @@ body {
   list-style: none;
   color: black;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .page-title {
